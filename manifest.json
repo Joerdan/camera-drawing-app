@@ -1,17 +1,50 @@
 {
     "name": "Camera Drawing Helper",
     "short_name": "CamDraw",
-    "description": "AR Drawing Assistant",
+    "description": "AR Drawing and Tracing Assistant - Overlay images on live camera for easy tracing",
     "start_url": "./index.html",
+    "scope": "./",
     "display": "standalone",
     "background_color": "#000000",
-    "theme_color": "#000000",
+    "theme_color": "#6366f1",
     "orientation": "portrait",
+    "categories": [
+        "graphics",
+        "utilities",
+        "productivity"
+    ],
     "icons": [
         {
-            "src": "vite.svg",
-            "sizes": "any",
-            "type": "image/svg+xml"
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icon-maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Start Tracing",
+            "short_name": "Trace",
+            "description": "Open app and start tracing",
+            "url": "./index.html",
+            "icons": [
+                {
+                    "src": "icon-192.png",
+                    "sizes": "192x192"
+                }
+            ]
         }
     ]
 }
